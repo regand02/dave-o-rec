@@ -24,4 +24,4 @@ The button will be disabled for five seconds (denoted by the LED illuminating) b
 ## Further development
 Probably make it so the button pin isn't an `INPUT_PULLUP`, I dunno
 
-Could change the LED to be on normally and off for the five seconds while recording by tweaking the `digitalWrite(x, pinLED)` lines
+Could change the LED to be on normally and off for the five seconds while recording by tweaking the `digitalWrite(pinLED, <x>)` lines
