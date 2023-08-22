@@ -58,13 +58,12 @@ void recGame() {
 }
 
 void resetBoard() {
-  for (int i = 0; i <= 5; i++) {
+  while (btnState == lastbtnState) {
     digitalWrite(pinLED, HIGH);
     delay(100);
     digitalWrite(pinLED, LOW);
     delay(100);
+    btnState = digitalRead(pinBTN);
   }
-
   resetDigispark();
-    
 }
